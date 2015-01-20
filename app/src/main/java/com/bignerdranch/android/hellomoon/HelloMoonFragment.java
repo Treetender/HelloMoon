@@ -19,6 +19,7 @@ public class HelloMoonFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        setRetainInstance(true);
         View v = inflater.inflate(R.layout.fragment_hello_moon, container, false);
 
         mPlayButton = (Button)v.findViewById(R.id.hellomoon_playButton);
