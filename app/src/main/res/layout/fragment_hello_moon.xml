@@ -2,13 +2,19 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
              android:layout_height="match_parent">
-    <ImageView
+    <!--<ImageView
         android:src="@drawable/armstrong_on_moon"
         android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:scaleType="centerInside"
         android:layout_weight="1"
-        android:contentDescription="@string/hellomoon_description"/>
+        android:contentDescription="@string/hellomoon_description"/>-->
+    <VideoView
+        android:id="@+id/hellomoon_videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/hellomoon_description" />
 
     <TableRow
         android:gravity="center|bottom"

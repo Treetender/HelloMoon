@@ -2,6 +2,7 @@ package com.bignerdranch.android.hellomoon;
 
 import android.content.Context;
 import android.media.MediaPlayer;
+import android.view.SurfaceHolder;
 
 /**
  * Created by treetender on 1/19/15.
@@ -17,10 +18,11 @@ public class AudioPlayer {
         }
     }
 
-    public void play(Context c) {
+    public void play(Context c, SurfaceHolder s) {
         stop();
 
-        mPlayer = MediaPlayer.create(c, R.raw.one_small_step);
+        mPlayer = MediaPlayer.create(c, R.raw.apollo_17_stroll);
+        mPlayer.setDisplay(s);
         mPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
