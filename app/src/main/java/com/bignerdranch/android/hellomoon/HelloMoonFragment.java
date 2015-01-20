@@ -33,7 +33,6 @@ public class HelloMoonFragment extends Fragment {
                      + "com.bignerdranch.android.hellomoon/raw/apollo_17_stroll");
 
         mVideoView.setVideoURI(videoUri);
-
         mPlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
